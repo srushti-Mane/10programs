@@ -1,11 +1,14 @@
+import java.util.Scanner;
 public class programs {
  public static void main(String[] args) {
-     int srushti = 9, poonam = 2, pallavi = 2;
-     if(srushti >= poonam && srushti>=pallavi)
-         System.out.println(srushti + " greater");
-     else if (poonam >= srushti && poonam >= pallavi)
-         System.out.println(poonam + " greater");
-     else if (pallavi >=srushti && pallavi >= poonam)
-         System.out.println(pallavi + " greater");
+     Scanner sc = new Scanner(System.in);
+     System.out.println("enter a year: ");
+     int year = sc.nextInt();
+     if ((year % 4 == 0) && (year %100!= 0) || (year%400 == 0))
+     {
+         System.out.println("leap year");
+     } else {
+         System.out.println("not leap year");
+     }
  }
 }
