@@ -1,11 +1,9 @@
 public class programs {
  public static void main(String[] args) {
-     int num = 9;
-     if (num > 0)
-     {System.out.println("num is positve");}
-     else if (num < 0)
-     { System.out.println("num is negative");}
+     int num = 53;
+     if (num % 2 == 0)
+     {System.out.println("num is even");}
          else
-     {System.out.println("zero");}
+     {System.out.println("number is odd");}
  }
 }
