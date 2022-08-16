@@ -1,18 +1,20 @@
 public class programs {
- public static void main(String[] args) {
-     int num = 33;
-     boolean flag = false;
-     for (int i =2; i<=num/2; i++) {
-         if (num % i == 0) {
-             flag = true;
-             break;
-         }
-     }
-     if (!flag)
-     {
-         System.out.println("number is prime");
-     } else {
-         System.out.println("number is not prime");
-     }
+ public static void main(String[] args){
+     int lower = 1, upper = 25;
+     for (int i = lower; i <= upper; i++)
+         if (isPrime (i))
+             System.out.println (i);
  }
+    static boolean isPrime (int n)
+    {
+        int count = 0;
+        if (n < 2)
+            return false;
+        for (int i = 2; i < n; i++)
+        {
+            if (n % i == 0)
+                return false;
+        }
+        return true;
+    }
 }
