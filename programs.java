@@ -1,14 +1,18 @@
-import java.util.Scanner;
 public class programs {
  public static void main(String[] args) {
-     Scanner sc = new Scanner(System.in);
-     System.out.println("enter a year: ");
-     int year = sc.nextInt();
-     if ((year % 4 == 0) && (year %100!= 0) || (year%400 == 0))
+     int num = 33;
+     boolean flag = false;
+     for (int i =2; i<=num/2; i++) {
+         if (num % i == 0) {
+             flag = true;
+             break;
+         }
+     }
+     if (!flag)
      {
-         System.out.println("leap year");
+         System.out.println("number is prime");
      } else {
-         System.out.println("not leap year");
+         System.out.println("number is not prime");
      }
  }
 }
