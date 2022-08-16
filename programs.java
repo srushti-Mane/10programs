@@ -1,11 +1,11 @@
 public class programs {
  public static void main(String[] args) {
-     int srushti = 70, poonam = 70;
-     if(srushti == poonam)
-         System.out.println("both equal");
-     else if (srushti > poonam)
+     int srushti = 9, poonam = 2, pallavi = 2;
+     if(srushti >= poonam && srushti>=pallavi)
          System.out.println(srushti + " greater");
-     else
+     else if (poonam >= srushti && poonam >= pallavi)
          System.out.println(poonam + " greater");
+     else if (pallavi >=srushti && pallavi >= poonam)
+         System.out.println(pallavi + " greater");
  }
 }
